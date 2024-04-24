@@ -9,6 +9,8 @@ metadata:
     app.kubernetes.io/branch: branch
     app.kubernetes.io/branch2: branch2
     app.kubernetes.io/branch3: branch3
+    app.kubernetes.io/branch4: branch4
+    app.kubernetes.io/branch5: branch5
     {{- with .Values.controller.labels }}
     {{- toYaml . | nindent 4 }}
     {{- end }}
