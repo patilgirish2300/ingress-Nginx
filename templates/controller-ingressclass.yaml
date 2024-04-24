@@ -6,9 +6,7 @@ metadata:
     {{- include "ingress-nginx.labels" . | nindent 4 }}
     app.kubernetes.io/component: controller
     app.kubernetes.io/componenttest: controllertest
-    app.kubernetes.io/demo: demo
-    app.kubernetes.io/new: new
-    app.kubernetes.io/old: old
+    app.kubernetes.io/branch: branch
     {{- with .Values.controller.labels }}
     {{- toYaml . | nindent 4 }}
     {{- end }}
