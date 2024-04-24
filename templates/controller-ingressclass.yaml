@@ -5,8 +5,10 @@ metadata:
   labels:
     {{- include "ingress-nginx.labels" . | nindent 4 }}
     app.kubernetes.io/component: controller
+    app.kubernetes.io/componenttest: controllertest
     app.kubernetes.io/demo: demo
     app.kubernetes.io/new: new
+    app.kubernetes.io/old: old
     {{- with .Values.controller.labels }}
     {{- toYaml . | nindent 4 }}
     {{- end }}
